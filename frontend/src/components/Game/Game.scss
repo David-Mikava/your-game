@@ -1,0 +1,110 @@
+.game-page {
+  .game {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    color: white;
+    margin-block-start: 0.3em;
+  }
+
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+
+    th,
+    td {
+      border: 1px solid rgb(254, 254, 57);
+      text-align: center;
+      padding: 20px;
+      font-size: 1.5em;
+    }
+
+    th {
+      color: gold;
+    }
+
+    td {
+      color: gold;
+    }
+
+    thead th:first-child {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+
+.modal-btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: 7px;
+}
+
+.answer {
+  width: 250px;
+  border-radius: 15px;
+  height: 30px;
+  border: 1px solid;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.finish {
+  & h2 {
+    color: gold;
+    margin-block-start: 0.3em;
+  }
+  & button {
+    background-color: gold;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+  }
+}
+
+.checkmark {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  margin: 20px;
+}
+
+.cross {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin: 20px;
+}
+
+.cross::before, .cross::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 4px; /* Толщина линии */
+  background-color: red;
+}
+
+.cross::before {
+  transform: rotate(45deg);
+  top: 10px; /* Положение линии по вертикали */
+  left: 0;
+}
+
+.cross::after {
+  transform: rotate(-45deg);
+  top: 10px; /* Положение линии по вертикали */
+  left: 0;
+}

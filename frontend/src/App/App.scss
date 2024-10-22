@@ -1,0 +1,39 @@
+$green: #38a82c;
+$grey: #a9a8a8;
+$bule: #2442b9;
+
+body {
+  background: rgb(12,65,164);
+  background: radial-gradient(circle, rgba(12,65,164,1) 0%, rgba(9,9,121,1) 81%);
+}
+
+@mixin delete {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  padding: 4px 6px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin input {
+  border: 1px solid $grey;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 250px;
+  box-sizing: border-box;
+}
+@mixin btn {
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 2px #2442b9;
+  border-radius: 5px;
+  background-color: #2442b9;
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+}
